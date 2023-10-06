@@ -10,7 +10,7 @@ formulario.addEventListener('submit', async function(event){
 })
 
 async function getFilme(name) {
-  let request = await fetch(`http://www.omdbapi.com/?s=${name}&apikey=e6c43dc6`);
+  let request = await fetch(`https://www.omdbapi.com/?s=${name}&apikey=e6c43dc6`);
   let response = await request.json();
   
   let filmes = response.Search;
